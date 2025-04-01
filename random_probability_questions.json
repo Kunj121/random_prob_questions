@@ -1,0 +1,202 @@
+[
+  {
+    "category": "Conditional Probability",
+    "question": "You draw a card. What's the probability it's a heart given it's red?",
+    "answer": "1/2"
+  },
+  {
+    "category": "Brainteasers",
+    "question": "A box contains 2 gold, 1 silver coin. Pick a gold. What's the probability it's the gold-gold box?",
+    "answer": "2/3"
+  },
+  {
+    "category": "Brainteasers",
+    "question": "You have 2 children. One is a boy born on Tuesday. What's the probability both are boys?",
+    "answer": "13/27"
+  },
+  {
+    "category": "Combinatorics",
+    "question": "How many 3-digit numbers can you form with digits 1-9 without repetition?",
+    "answer": "9*8*7 = 504"
+  },
+  {
+    "category": "Card Questions",
+    "question": "Probability of drawing a king or a heart?",
+    "answer": "4 + 13 - 1 = 16 \u2192 16/52 = 4/13"
+  },
+  {
+    "category": "Coin Questions",
+    "question": "You flip until you get heads. P(1st flip is heads)?",
+    "answer": "0.5"
+  },
+  {
+    "category": "Card Questions",
+    "question": "Probability of face card?",
+    "answer": "12/52 = 3/13"
+  },
+  {
+    "category": "Card Questions",
+    "question": "Probability of two hearts in a row without replacement?",
+    "answer": "(13/52)*(12/51) \u2248 0.059"
+  },
+  {
+    "category": "Markov Chains",
+    "question": "What is a Markov Chain?",
+    "answer": "A process where the next state depends only on the current state."
+  },
+  {
+    "category": "Card Questions",
+    "question": "Probability of red card?",
+    "answer": "26/52 = 0.5"
+  },
+  {
+    "category": "Conditional Probability",
+    "question": "P(Rain) = 0.3, P(Late | Rain) = 0.5. What's P(Late and Rain)?",
+    "answer": "0.3 * 0.5 = 0.15"
+  },
+  {
+    "category": "Expected Value",
+    "question": "You draw a card from a shuffled deck. You win $5 for a red card, lose $3 for black. Expected value?",
+    "answer": "5*(26/52) - 3*(26/52) = 1"
+  },
+  {
+    "category": "Conditional Probability",
+    "question": "You roll a die. What's P(even | number > 2)?",
+    "answer": "P(4,6)/P(3,4,5,6) = 2/4 = 0.5"
+  },
+  {
+    "category": "Conditional Probability",
+    "question": "You flip two coins. What's the probability both are heads given the first is heads?",
+    "answer": "1/2"
+  },
+  {
+    "category": "Expected Value",
+    "question": "You flip a coin until you get heads. What is the expected number of flips?",
+    "answer": "2"
+  },
+  {
+    "category": "Coin Questions",
+    "question": "Flip a fair coin 4 times. What's the probability of getting exactly 2 heads?",
+    "answer": "C(4,2)/16 = 6/16 = 0.375"
+  },
+  {
+    "category": "Bayesian Probability",
+    "question": "Rare condition in 1/1000, test 100% sensitive, 5% false positive rate. P(condition|positive)?",
+    "answer": "\u22482%"
+  },
+  {
+    "category": "Markov Chains",
+    "question": "In a 2-state chain with equal transition probabilities, what is the steady state?",
+    "answer": "Both states = 0.5"
+  },
+  {
+    "category": "Expected Value",
+    "question": "You roll a fair 6-sided die. What is the expected value?",
+    "answer": "3.5"
+  },
+  {
+    "category": "Bayesian Probability",
+    "question": "Disease rate is 1%, test has 99% sensitivity, 95% specificity. Positive result. P(disease)?",
+    "answer": "\u224816%"
+  },
+  {
+    "category": "Combinatorics",
+    "question": "How many ways to arrange the letters in the word 'PROBABILITY'?",
+    "answer": "11! / (2!2!) = 19958400"
+  },
+  {
+    "category": "Coin Questions",
+    "question": "Flip a fair coin 5 times. Expected number of heads?",
+    "answer": "5 * 0.5 = 2.5"
+  },
+  {
+    "category": "Combinatorics",
+    "question": "How many ways to choose a committee of 2 from 5 people?",
+    "answer": "C(5,2) = 10"
+  },
+  {
+    "category": "Brainteasers",
+    "question": "You flip coins until 2 heads in a row. Expected number of flips?",
+    "answer": "6"
+  },
+  {
+    "category": "Bayesian Probability",
+    "question": "1% population are smokers. P(Cancer|Smoke)=0.1, P(Cancer|\u00acSmoke)=0.01. Random cancer patient. P(Smoker)?",
+    "answer": "\u22480.091"
+  },
+  {
+    "category": "Coin Questions",
+    "question": "Flip 3 coins. What's the probability of at least one head?",
+    "answer": "1 - P(TTT) = 1 - 1/8 = 0.875"
+  },
+  {
+    "category": "Brainteasers",
+    "question": "You pick two random digits 1-9. What\u2019s the probability the first is larger?",
+    "answer": "36/81 = 4/9"
+  },
+  {
+    "category": "Conditional Probability",
+    "question": "P(A) = 0.5, P(B|A) = 0.6. What is P(A and B)?",
+    "answer": "0.5 * 0.6 = 0.3"
+  },
+  {
+    "category": "Brainteasers",
+    "question": "You pick a door among 3, one has a prize. Host opens a goat door. Switch?",
+    "answer": "Yes, win chance goes to 2/3"
+  },
+  {
+    "category": "Markov Chains",
+    "question": "If P(A\u2192B)=0.6, P(B\u2192A)=0.4, what's the steady state?",
+    "answer": "Solve \u03c0A = 0.4\u03c0B, \u03c0A+\u03c0B=1 \u2192 \u03c0A=0.4, \u03c0B=0.6"
+  },
+  {
+    "category": "Combinatorics",
+    "question": "In how many ways can you choose 3 students from a group of 10?",
+    "answer": "C(10,3) = 120"
+  },
+  {
+    "category": "Bayesian Probability",
+    "question": "P(A)=0.2, P(B|A)=0.9, P(B|\u00acA)=0.1. What's P(A|B)?",
+    "answer": "\u22480.69"
+  },
+  {
+    "category": "Expected Value",
+    "question": "You toss a coin 3 times. You win $1 per head. What is the expected payout?",
+    "answer": "3 * 0.5 = 1.5"
+  },
+  {
+    "category": "Coin Questions",
+    "question": "You flip a biased coin with P(H)=0.7. Expected heads in 10 flips?",
+    "answer": "10 * 0.7 = 7"
+  },
+  {
+    "category": "Expected Value",
+    "question": "A game pays you $10 if you roll a 6 on a die, $0 otherwise. What's the expected payout?",
+    "answer": "10 * (1/6) = 1.67"
+  },
+  {
+    "category": "Combinatorics",
+    "question": "How many ways can you choose 2 cards from a 52-card deck?",
+    "answer": "C(52,2) = 1326"
+  },
+  {
+    "category": "Card Questions",
+    "question": "What's the probability of drawing an ace from a 52-card deck?",
+    "answer": "4/52 = 1/13"
+  },
+  {
+    "category": "Markov Chains",
+    "question": "What\u2019s the sum of probabilities from a state in a Markov chain?",
+    "answer": "Always 1"
+  },
+  {
+    "category": "Bayesian Probability",
+    "question": "You hear an alarm. P(Burglary)=0.01, P(Alarm|Burglary)=0.95, P(Alarm|\u00acBurglary)=0.02. Find P(Burglary|Alarm).",
+    "answer": "\u22480.32"
+  },
+  {
+    "category": "Markov Chains",
+    "question": "What's a stationary distribution?",
+    "answer": "A distribution that doesn\u2019t change after transitions."
+  }
+]
