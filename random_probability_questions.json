@@ -1,177 +1,67 @@
 [
   {
-    "category": "Conditional Probability",
-    "question": "You draw 3 cards from a standard 52-card deck without replacement. You’re told that at least 2 of them are hearts. What is the probability all 3 are hearts?",
-    "answer": "C(13,3) / [C(13,3) + C(13,2)*C(39,1)] = 286 / 3328 ≈ 0.086"
-  },
-  {
-    "category": "Brainteasers",
-    "question": "Three boxes are labeled incorrectly: (1) Apples, (2) Oranges, and (3) Apples+Oranges. One box has only apples, one only oranges, and one a mix. By drawing a single piece of fruit from one box, how can you correctly relabel all the boxes?",
-    "answer": "Draw from the box labeled “Apples+Oranges.” Because the label is wrong, that box must actually have either all apples or all oranges. Use that single draw to infer the true contents and fix all labels."
-  },
-  {
-    "category": "Brainteasers",
-    "question": "You have 3 boxes: (2 gold coins), (2 silver coins), and (1 gold + 1 silver). You pick a box at random and draw one coin, which is gold, then replace it and draw again, getting gold again. What is the probability you chose the box with 2 gold coins?",
-    "answer": "After the first gold, the probability is 2/3. After drawing gold again (with replacement), it becomes [ (2/3)*1 ] / [ (2/3)*1 + (1/3)*(1/2 ) ] = 4/5."
-  },
-  {
-    "category": "Brainteasers",
-    "question": "In a Monty Hall variant with 4 doors (1 prize, 3 goats), you choose 1 door and the host opens 2 goat doors. Should you switch to the last unopened door, and what is your chance of winning if you do?",
-    "answer": "Yes, switching wins with probability 3/4."
-  },
-  {
-    "category": "Brainteasers",
-    "question": "In an extended Monty Hall problem with 100 doors, 1 prize, and 99 goats, you pick 1 door. The host opens 98 goat doors, leaving 1 unopened door besides yours. Should you switch, and what is the probability of winning if you do?",
-    "answer": "Yes, switch. The probability is 99/100."
-  },
-  {
-    "category": "Combinatorics",
-    "question": "How many distinct arrangements of the letters in 'BANANAS' are possible if no two ‘A’s can be adjacent?",
-    "answer": "First arrange B, N, N, S → 4!/(2!)=12 ways. Then place 3 ‘A’s into the 5 gaps between these letters: C(5,3)=10. Total 12×10=120."
-  },
-  {
-    "category": "Combinatorics",
-    "question": "How many distinct permutations are there of the word 'MISSISSIPPI'?",
-    "answer": "11! / (4! × 4! × 2!) = 34,650."
-  },
-  {
-    "category": "Combinatorics",
-    "question": "How many ways can you distribute 5 indistinguishable balls into 3 distinguishable boxes if no box can be empty?",
-    "answer": "Use “stars and bars” with each box ≥1 ball: C(5−1, 3−1)=C(4,2)=6."
-  },
-  {
-    "category": "Combinatorics",
-    "question": "How many 4-digit numbers can be formed using digits 1 through 9 if the digits must be in strictly increasing order?",
-    "answer": "C(9,4) = 126."
-  },
-  {
-    "category": "Combinatorics",
-    "question": "How many 5-card hands from a standard 52-card deck contain at least one ace?",
-    "answer": "C(52,5) − C(48,5) = 2,598,960 − 1,712,304 = 886,656."
-  },
-  {
-    "category": "Card Questions",
-    "question": "What is the probability that a 5-card poker hand is a full house (three of one rank and two of another)?",
-    "answer": "Number of such hands = C(13,1)*C(4,3)*C(12,1)*C(4,2)=3,744. Total 5-card hands = C(52,5)=2,598,960. Probability ≈ 0.00144."
-  },
-  {
-    "category": "Card Questions",
-    "question": "What is the probability that a 5-card poker hand is a flush (all cards in the same suit)?",
-    "answer": "4 × C(13,5) / C(52,5) = 5,148 / 2,598,960 ≈ 0.00198."
-  },
-  {
-    "category": "Card Questions",
-    "question": "What is the probability that a 5-card hand contains exactly 2 aces?",
-    "answer": "[C(4,2) × C(48,3)] / C(52,5) ≈ 0.0399."
-  },
-  {
-    "category": "Coin Questions",
-    "question": "You flip a fair coin repeatedly until you get 3 heads. What is the probability that the third head appears on the 5th flip?",
-    "answer": "C(4,2)*(1/2)^5 = 6*(1/32) = 3/16."
-  },
-  {
-    "category": "Coin Questions",
-    "question": "You flip a fair coin 8 times. What is the probability of getting at least 6 heads?",
-    "answer": "[C(8,6)+C(8,7)+C(8,8)] / 2^8 = 37/256 ≈ 0.1445."
-  },
-  {
-    "category": "Coin Questions",
-    "question": "You have two coins: Coin A with P(H)=0.3 and Coin B with P(H)=0.6. You randomly choose one coin and flip it 3 times. What’s the probability of getting exactly 2 heads?",
-    "answer": "(1/2) × [3 × (0.3^2) × 0.7 + 3 × (0.6^2) × 0.4] ≈ 0.3105."
-  },
-  {
-    "category": "Coin Questions",
-    "question": "A biased coin shows heads with probability 0.3. If you flip it 10 times, what’s the probability of getting at least 2 heads?",
-    "answer": "1 − 0.7^10 − 10 × 0.3 × 0.7^9."
-  },
-  {
-    "category": "Coin Questions",
-    "question": "You flip a biased coin (P(H)=0.7) five times. What’s the probability of getting a majority of heads (at least 3 out of 5)?",
-    "answer": "∑(k=3 to 5) [C(5,k) × (0.7^k) × (0.3^(5−k))]."
-  },
-  {
-    "category": "Conditional Probability",
-    "question": "In a city, P(Rain)=0.3, P(Snow)=0.1, and P(Rain & Snow)=0.02. If it’s either raining or snowing, what’s the probability it’s only raining?",
-    "answer": "(0.3−0.02) / (0.3+0.1−0.02) = 0.28 / 0.38 = 14/19 ≈ 0.7368."
-  },
-  {
-    "category": "Conditional Probability",
-    "question": "You roll a fair 6-sided die twice. What is P(the first roll is 4 | the maximum of the two rolls is 4)?",
-    "answer": "4/7 ≈ 0.5714."
-  },
-  {
-    "category": "Conditional Probability",
-    "question": "You flip 4 fair coins. Given that at least 2 are heads, what is the probability all 4 are heads?",
-    "answer": "1/11 ≈ 0.0909."
-  },
-  {
-    "category": "Conditional Probability",
-    "question": "Events A and B have P(A)=0.6, P(B)=0.5, and P(A∩B)=0.2. Are A and B independent, and why?",
-    "answer": "No. Independence would require P(A∩B)=P(A)P(B)=0.3, but we have only 0.2."
-  },
-  {
-    "category": "Brainteasers",
-    "question": "You pick two distinct digits from 1 to 9 (in order). What is the probability their sum is prime?",
-    "answer": "There are 72 ordered pairs (9×8). Of these, 28 have a prime sum, so 28/72 = 7/18 ≈ 0.3889."
+    "category": "Expected Value",
+    "question": "You flip a fair coin 4 times. You earn $2 for each head and lose $1 for each tail. What is your expected payout?",
+    "answer": "E[payout] = 4 × (0.5×2 + 0.5×(−1)) = 4 × 0.5 = $2."
   },
   {
     "category": "Expected Value",
-    "question": "You roll two fair 6-sided dice. You win $10 if the sum is 7 or 11, $5 if it’s a double, and lose $1 otherwise. What is your expected value?",
-    "answer": "22/9 ≈ $2.44."
+    "question": "You draw a single card from a standard 52-card deck. You win $10 for a face card (J, Q, K), $5 for an ace, and $0 otherwise. What is your expected payout?",
+    "answer": "E = (12/52)×10 + (4/52)×5 + (36/52)×0 = 140/52 ≈ $2.69."
   },
   {
     "category": "Expected Value",
-    "question": "You roll a fair 6-sided die repeatedly until you get two 6s in a row. What is the expected number of rolls needed?",
-    "answer": "42."
+    "question": "You roll a fair 6-sided die. If you roll a 6, you win $30. Otherwise, you lose $5. What is your expected value?",
+    "answer": "E = (1/6)×30 + (5/6)×(−5) = −5/6 ≈ −$0.83."
   },
   {
     "category": "Expected Value",
-    "question": "You roll three fair 6-sided dice. If your payout is the product of the three results, what is the expected payout?",
-    "answer": "E(XYZ)=E(X)×E(Y)×E(Z)=3.5×3.5×3.5=42.875."
+    "question": "A game costs $5 to play. You draw a number from 1 to 100 uniformly at random. If it’s divisible by 10, you win $40. What is your expected net gain?",
+    "answer": "P(win) = 10/100 = 0.1 → E[winnings] = 0.1×40 = $4 → Net = 4 − 5 = −$1."
   },
   {
     "category": "Expected Value",
-    "question": "You roll two fair 6-sided dice and win an amount equal to the sum of their squares. What is the expected payout?",
-    "answer": "2 × E(X²) = 2 × (91/6) = 91/3 ≈ 30.33."
+    "question": "You randomly pick a number between 1 and 10. You are paid the square of that number in dollars. What is the expected payout?",
+    "answer": "E = (1² + 2² + … + 10²)/10 = 385/10 = $38.5."
   },
   {
     "category": "Expected Value",
-    "question": "You roll a fair 8-sided die (values 1 through 8). Your payout is 2^X, where X is the result of the die. What is the expected payout?",
-    "answer": "(2¹ + 2² + … + 2⁸) / 8 = 510 / 8 = 63.75."
+    "question": "You play a game where you roll a fair die until you get a 6. You are paid $3 for each roll. What is the expected payout?",
+    "answer": "Expected number of rolls = 6 → E[payout] = 6 × 3 = $18."
   },
   {
-    "category": "Game Theory",
-    "question": "In the standard Rock–Paper–Scissors game, what is the mixed-strategy Nash equilibrium for each player?",
-    "answer": "Each player should choose Rock, Paper, and Scissors with equal probability 1/3."
+    "category": "Expected Value",
+    "question": "A raffle sells 1,000 tickets at $5 each. One ticket wins $2,000. What is the expected value of a single ticket?",
+    "answer": "E = (1/1000)×2000 − 5 = 2 − 5 = −$3."
   },
   {
-    "category": "Game Theory",
-    "question": "What is a strictly dominant strategy in a normal-form game?",
-    "answer": "A strategy that yields a strictly higher payoff than any other strategy, no matter what the opponent does."
+    "category": "Combinatorics",
+    "question": "How many 5-letter words can you make using the letters A, B, C, D, E with no repetition?",
+    "answer": "5! = 120."
   },
   {
-    "category": "Bayesian Probability",
-    "question": "A disease affects 1 in 500 people (0.2%). A test has 99% sensitivity and a 4% false-positive rate. If someone tests positive, what is the probability they actually have the disease?",
-    "answer": "Using Bayes’ Theorem: ≈4.72%."
+    "category": "Combinatorics",
+    "question": "How many 4-digit numbers have all digits distinct and do not begin with 0?",
+    "answer": "First digit: 1–9 → 9 choices. Remaining: pick 3 from 9 digits → P(9,3) = 9×8×7. Total = 9×9×8×7 = 4536."
   },
   {
-    "category": "Bayesian Probability",
-    "question": "A disease affects 2% of a population. A test has 98% sensitivity and a 10% false-positive rate. If a person tests positive, what is the probability they have the disease?",
-    "answer": "≈16.7%."
+    "category": "Combinatorics",
+    "question": "How many ways can 6 people be seated around a round table?",
+    "answer": "Circular permutations = (6−1)! = 120."
   },
   {
-    "category": "Bayesian Probability",
-    "question": "20% of people smoke. The probability of cancer among smokers is 30%, and 5% among non-smokers. If a random person has cancer, what is the probability they are a smoker?",
-    "answer": "60%."
+    "category": "Combinatorics",
+    "question": "How many binary strings of length 8 contain exactly 3 ones?",
+    "answer": "C(8,3) = 56."
   },
   {
-    "category": "Bayesian Probability",
-    "question": "Prior P(Earthquake)=0.001, P(Alarm|Earthquake)=0.8, P(Alarm|¬Earthquake)=0.1. If the alarm goes off, what is P(Earthquake|Alarm)?",
-    "answer": "≈0.79%."
+    "category": "Combinatorics",
+    "question": "How many ways can 10 identical balls be placed into 4 distinguishable boxes?",
+    "answer": "Stars and bars: C(10+4−1, 4−1) = C(13,3) = 286."
   },
   {
-    "category": "Bayesian Probability",
-    "question": "If your prior that an event occurs is 60%, and new evidence has a likelihood ratio of 5:1 in favor, what is your posterior probability?",
-    "answer": "Posterior odds = prior odds × LR = (0.6/0.4)×5 = 7.5, so posterior = 7.5 / (1+7.5) ≈ 88.2%."
+    "category": "Combinatorics",
+    "question": "In how many ways can you distribute 7 indistinguishable balls into 3 distinguishable boxes such that no box has more than 4 balls?",
+    "answer": "Count integer solutions to x+y+z=7 where 0 ≤ x,y,z ≤ 4. Solutions: 27 total valid assignments."
   }
 ]
